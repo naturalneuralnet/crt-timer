@@ -1,16 +1,18 @@
 # About
 
-A stopwatch with CRT screen theme.
+A stopwatch with CRT moniter theme.
+
+![Screenshot](/src/assets/screenshot.png)
 
 Check it out here:
 
 In the future I hope to add time tracking functionailty.
 
-![Screenshot](/src/assets/screenshot.png)
-
 # Table of Contents
 
--[Local Setup](#local-setup) -[What I learned](#what-i-learned) -[Credits](#credit)
+- [Local Setup](#local-setup)
+- [What I learned](#what-i-learned)
+- [Credits](#credit)
 
 # Local Setup
 
@@ -44,4 +46,3 @@ CRT Moniter Effect courtesy of [Alec Lownes](http://aleclownes.com/2017/02/01/cr
 Watch Ticking sound effect from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=69213)
 
 Digital Clock Icon by [FreePik](https://www.flaticon.com/free-icons/digital-clock)
-# crt-timer
