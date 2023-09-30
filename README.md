@@ -46,3 +46,9 @@ CRT Moniter Effect courtesy of [Alec Lownes](http://aleclownes.com/2017/02/01/cr
 Watch Ticking sound effect from [Pixabay](https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=69213)
 
 Digital Clock Icon by [FreePik](https://www.flaticon.com/free-icons/digital-clock)
+
+## License
+
+You can find the License for this project [here](#LICENSE.md)
+
+This project is licensed under the terms of the MIT license.
