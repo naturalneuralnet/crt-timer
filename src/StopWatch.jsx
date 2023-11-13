@@ -7,7 +7,7 @@ import tickSound from "./assets/watch-ticking1.mp3";
 const StopWatch = () => {
   const font = "Courier";
 
-  /// local state kept inside the component
+  /// local state
   /// the time counted up in milliseconds
   const [time, setTime] = useState(0);
   /// whether the timer is active or not
@@ -15,8 +15,7 @@ const StopWatch = () => {
   /// / whether the timer is paused or not
   const [isPaused, setIsPaused] = useState(true);
 
-  // is called when isActive or isPaused changes,
-  // whenever the the buttons to start or resume or reset the timer are clicked
+  // useEffect is called when isActive or isPaused changes
 
   useEffect(() => {
     const tickingAudio = new Audio(tickSound);
@@ -24,14 +23,14 @@ const StopWatch = () => {
     /// variable for the interval function
     let interval = null;
 
-    // when the start button has been cliked and the reset or pause button has not been clikced
+    // when the start button has been clicked
     if (isActive && isPaused === false) {
       // counts up the time in 10 milliseconds
       interval = setInterval(() => {
         setTime((tick) => tick + 10);
       }, 10);
 
-      // calculates each tock a full second or 1000 millisecond that has passed
+      // calculates each tock, a full second or 1000 millisecond that has passed
       const tock = (time / 1000) % 100;
 
       // this if statement plays the tick sound every second
@@ -52,18 +51,18 @@ const StopWatch = () => {
     };
   }, [isActive, isPaused, time]);
 
-  // handle Start - starts the timer
+  // Starts the timer
   const handleStart = () => {
     setIsActive(true);
     setIsPaused(false);
   };
 
-  // handle Pause and Resume - Pauses or Resumes the timer
+  // Pauses or Resumes the timer
   const handlePauseResume = () => {
     setIsPaused(!isPaused);
   };
 
-  // handle Reset - resets the timer
+  // Resets the timer
   const handleReset = () => {
     setIsActive(false);
     setTime(0);
@@ -95,7 +94,6 @@ const StopWatch = () => {
       <Box
         sx={{
           background: "transparent",
-
           padding: "0px 5px 0px 5px",
           borderRadius: "10%",
           width: "90%",
