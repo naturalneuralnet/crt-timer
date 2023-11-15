@@ -4,7 +4,7 @@ A stopwatch with CRT moniter theme.
 
 ![Screenshot](/src/assets/screenshot.png)
 
-Check it out here:
+Check it out here: https://crt-timer.onrender.com/
 
 In the future I hope to add time tracking functionailty.
 
